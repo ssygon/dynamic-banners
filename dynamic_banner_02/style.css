@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'bula';
+	src: url('Bula.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'plutocond_extralight';
+	src: url('plutocondextralight-webfont.woff2') format('woff2'),
+			 url('plutocondextralight-webfont.woff') format('woff'),
+			 url('plutocondextralight-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html { font-size: 1em; }
+:focus { outline:none;}
+::-moz-focus-inner { border:0;}
+body, body * {
+  vertical-align: baseline; border: 0; outline: 0; padding: 0; margin: 0; font-family: inherit; font-weight: inherit; font-style: inherit; font-size: 100%;
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-backface-visibility: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+._absolute{ position: absolute; top: 0px; left: 0px; width: 300px; height: 250px;}
+#exit {
+  cursor: pointer; background-color: rgba(255,255,255,0); z-index: 1900;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;/*-- For some Android ---*/
+}
+#main{ display: none; width:298px; height:248px; z-index: 101;}
+#container {
+  border: 1px solid #a0a0a0; box-sizing: border-box;
+  overflow: hidden; background-color: white; /*background-color: #21c2ec;*/
+  display: block;
+}
+#common{ z-index: 1000; }
+
+._sprite { display: none; position: absolute; background: url("sprites.png") top left no-repeat; }
+
+.fiji-font {
+	font-family: 'bula';
+	font-size: 31px;
+	letter-spacing: 1px;
+	color: white;
+	white-space: pre;
+}
+.pluto-font {
+	font-family: 'plutocond_extralight';
+	font-size: 13px;
+	color: white;
+	white-space: pre;
+}
+.font-fix {
+	-webkit-backface-visibility: hidden; /* Remove jagged edges, for older versions of Safari/Webkit */	
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+	/* text-shadow: 1px 1px 0px rgba(0,0,0,0.1); */	/* IE eligibility */
+}
+#txtALL {
+	position: absolute;
+	/* left: 80px;
+	top: 25px;
+	width: inherit;
+	height:35px; */
+}
+.slant-text {
+	transform: rotateZ(359deg);
+	-webkit-transform: rotateZ(359deg);
+	-ms-transform: rotate(359deg);
+}
+
+#txt0{ position: absolute; left: 0px; top: 0px; }
+#txt0 span{ display: block; display: none}
+/* .t0 { display:none; position: absolute; overflow: hidden; top:0px; left:0px;}
+.t1 { display:none; position: absolute; overflow: hidden; top:40px; left:0px;}
+.t2 { display:none; position: absolute; overflow: hidden; top:80px; left:0px;} */
+
+#ctaBTN {
+	display: none;
+	/* left: 85px; top:92px; width: 93px; height: 17px; */
+}
+.ctaMARK {
+	position: absolute;
+	/* left: 90px; top: 0px; width: 15px; height: 17px; */
+}
+.cta-text {
+	font-weight: bold;
+	padding: 7px;
+	position: absolute;
+	background-color: #3C659F;
+	border-radius: 4px;
+}
+
+.logo { background-size: 100% auto}

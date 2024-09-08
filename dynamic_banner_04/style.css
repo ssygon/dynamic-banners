@@ -1,0 +1,173 @@
+@charset "UTF-8";
+html { font-size: 1em; }
+:focus { outline:none;}
+::-moz-focus-inner { border:0;}
+
+body, body * {
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overlay{
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 300px;
+  height: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+.sprite {
+  position: absolute;
+  display: block;
+  background-image: url("sprites.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+#container {
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#main{
+  width:298px;
+  height:248px;
+  background-image: url("bg.jpg");
+  background-size: 100% auto;
+
+  font-family: heineken;
+  color: white;
+  display: none;
+}
+
+#replay {
+  width: 55px;
+  height: 15px;
+  top: 5px;
+  right: 5px;
+  background-position: 0px -578px;
+  cursor: pointer;
+}
+
+#exit {
+  cursor: pointer;
+  background-color: rgba(255,255,255,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;/*-- For some Android ---*/
+}
+
+#copy {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#copy .sprite {
+  width: 300px;
+  height: 40px;
+}
+
+/* ONE */
+#f1 .sprite:first-child, #f2 .sprite:first-child, #f4 .sprite:first-child {
+  top: 84px;
+  left: 9px;
+  background-position: 0px 0px;
+}
+
+/* NIGHT */
+#f1 .sprite:nth-child(2){
+  top: 124px;
+  left: 9px;
+  background-position: 0px -40px;
+}
+
+/* SHOW */
+#f2 .sprite:nth-child(2){
+  top: 124px;
+  left: 9px;
+  background-position: 0px -92px;
+}
+
+/* NINE */
+#f3 .sprite:first-child{
+  top: 84px;
+  left: 9px;
+  background-position: 0px -141px;
+}
+
+/* DESIGNERS */
+#f3 .sprite:nth-child(2){
+  top: 124px;
+  left: 9px;
+  background-position: 0px -182px;
+}
+
+/* CAUSE */
+#f4 .sprite:nth-child(2){
+  top: 124px;
+  left: 9px;
+  background-position: 0px -233px;
+}
+
+/* FASHION */
+#f5 .sprite:first-child{
+  top: 84px;
+  left: 9px;
+  background-position: 0px -282px;
+}
+
+/* FOR */
+#f5 .sprite:nth-child(2){
+  top: 124px;
+  left: 9px;
+  background-position: 0px -322px;
+}
+
+/* A CURE */
+#f5 .sprite:nth-child(3){
+  top: 164px;
+  left: 9px;
+  background-position: 0px -362px;
+}
+
+/* 26.03 */
+#f6 .sprite:first-child{
+  top: 84px;
+  left: 9px;
+  background-position: 0px -485px;
+}
+
+#logo {
+  top: 14px;
+  left: 7px;
+  height: 60px;
+  width: 200px;
+  background-position: 2px -415px;
+}
+
+#cta {
+  top: 141px;
+  left: 9px;
+  height: 23px;
+  width: 200px;
+  background-position: 2px -542px;
+  transform: all 0.2s ease;
+}

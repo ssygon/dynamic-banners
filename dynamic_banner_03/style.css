@@ -1,0 +1,59 @@
+@charset "UTF-8";
+html { font-size: 1em; }
+body, body * {
+	vertical-align: baseline; border: 0; outline: 0; padding: 0; margin: 0; font-family: inherit; font-weight: inherit; font-style: inherit; font-size: 100%;
+	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+#container { display: none; width:298px; height:248px; border: 1px solid #c5c5c5; background-color:#ffffff; margin: auto; overflow: hidden;}
+#exit {
+	opacity: 0; z-index: 1900; cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -moz-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color: transparent;/*-- For some Android ---*/
+}
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+#common{ z-index: 1000; }
+#main{ z-index: 101;}
+.absolute{ position: absolute; top: 0; left: 0; width: 300px; height: 250px; }
+
+._sprite { display: none; position: absolute; background: url("sprites.png") top left no-repeat; }
+._car {position: absolute; background: url("car.png") top left no-repeat; }
+#carALL{ position: absolute; top: 138px; left: 47px; }
+#carT{ top: 0px;left:0px; width: 280px; height: 132px; background-position: 0px 0px;}
+#carB{ top: 60px;left:0px;  width: 300px; height: 100px; background-position: 0px -133px;}
+
+._scene{ background: url("img0.png") top left no-repeat;}
+#sky{top:0px;left:20px;height:148px;}
+#floor{ top:148px; height:120px;background-position: 0px -166px;}
+#img0 { perspective:600px;}
+#img1 {display: none; background: url("img1.jpg") top left no-repeat;}
+
+#txt0{ position: absolute; top: 20px; left: 15px; }
+#txt1{ position: absolute; top: 20px; left: 15px; }
+#txt2{ position: absolute; top: 20px; left: 15px;  }
+._txt{ left: 0px; width: 240px; height: 27px;}
+.t0 { top: 0px;  background-position: -10px -11px; }
+.t1 { top: 34px; background-position: -10px -48px; }
+.t2 { top: 0px;  background-position: -10px -83px; }
+.t3 { top: 34px; background-position: -10px -119px; }
+.t4 { top: 0px;  background-position: -10px -156px; }
+.t5 { top: 34px; background-position: -10px -192px; }
+.t6 {left: 15px; top: 98px; background-position: -10px -228px; }
+
+#plate{ display: block; top:137px; left: 56px; width: 179px; height:53px; background-position:-11px -305px;}
+
+#logo { position: absolute; display: block; right: 57px; bottom: 112px; width: 188px; height: 91px;}
+.tcs { left: 10px; bottom: 10px; width: 75px; height: 15px; background-position: -217px -8px; }
+
+#ctaBTN {
+	left: 8px; top: 195px; width:156px; height:43px; background-position: -9px -259px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;/*-- For some Android ---*/
+}
+
+.replay {
+	display:none; position: absolute; top: 4px; right: 40px; width: 19px; height: 17px;
+	background: url("replay.png")  top left no-repeat; cursor: pointer; z-index: 2000;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;/*-- For some Android ---*/
+}
